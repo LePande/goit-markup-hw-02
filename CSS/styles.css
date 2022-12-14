@@ -1,0 +1,40 @@
+header {
+  width: 1600px;
+  height: 80 px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a,
+li {
+  font-family: "roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #212121;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.logo {
+  width: 145px;
+  font-family: "raleway", sans-serif;
+  font-size: 26px;
+  color: #2196f3;
+  margin: 0;
+  padding: 24px 23px 25px 215px;
+  display: inline;
+}
+
+.portafolio {
+  color: #2196f3;
+}
+
+.cabecera:hover {
+  color: #2196f3;
+}
+
+.cabecera:visited {
+  color: #21#212121;
+}
