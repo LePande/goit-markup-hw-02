@@ -27,14 +27,34 @@ li {
   display: inline;
 }
 
-.portafolio {
-  color: #2196f3;
-}
-
 .cabecera:hover {
   color: #2196f3;
 }
 
 .cabecera:visited {
-  color: #21#212121;
+  color: #212121;
+}
+
+button {
+  background-color: #f5f4fa;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #212121;
+  border: none;
+  padding: 10px 25px;
+}
+
+button:hover {
+  background-color: #2196f3;
+  font-family: "roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+}
+
+footer {
+  background-color: #212121;
 }
