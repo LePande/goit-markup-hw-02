@@ -1,30 +1,27 @@
 body {
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
   --color-azul: #2196f3;
   --color-negro: #212121;
   font-family: "roboto", "arial", sans-serif;
 }
 
-.top-banner {
-  width: 100%;
-  height: 600px;
-  background-color: var(--color-negro);
-  font-weight: 700;
-  font-size: 44px;
-  text-align: center;
-  color: #ffffff;
-}
-
 a {
   text-decoration: none;
 }
 
-.top-nav {
+/* Aqui comienza el header*/
+
+.top-page {
+  background-color: #ffffff;
   width: 100%;
   height: 80px;
-  background-color: #ffffff;
   border-bottom: 1px solid #ececec;
+}
+
+.top-nav {
+  display: inline-block;
+  margin-top: 24px;
 }
 
 .top-nav ul {
@@ -32,9 +29,8 @@ a {
   padding: 0;
 }
 
-.top-page {
+.top-page-button {
   display: inline-block;
-  margin-top: 21px;
 }
 
 .logo {
@@ -44,24 +40,6 @@ a {
   font-size: 26px;
   color: var(--color-azul);
   margin: 24px 46px 25px 215px;
-}
-
-.studio {
-  width: 42px;
-  height: 16px;
-  margin: 32px 30px;
-}
-
-.portfolio {
-  width: 58px;
-  height: 16px;
-  margin: 32px 30px;
-}
-
-.contacts {
-  width: 59px;
-  height: 16px;
-  margin: 32px 30px;
 }
 
 .top-button {
@@ -78,6 +56,28 @@ a {
   color: var(--color-azul);
 }
 
+.studio {
+  width: 42px;
+  height: 16px;
+  margin: 24px 30px;
+}
+
+.portfolio {
+  width: 58px;
+  height: 16px;
+  margin: 24px 30px;
+}
+
+.contacts {
+  width: 59px;
+  height: 16px;
+  margin: 24px 314px 24px 30px;
+}
+
+.top-contacts {
+  display: inline-block;
+}
+
 .top-contact {
   font-weight: 500;
   font-size: 14px;
@@ -88,10 +88,17 @@ a {
   color: var(--color-azul);
 }
 
-.top-contacts {
-  display: flex;
-  justify-content: right;
+.mail {
+  margin: 24px 30px 24px 7px;
 }
+
+.phone {
+  margin: 24px 30px 24px 7px;
+}
+
+/* Aqui termina el header */
+
+/* Aqui comienza los botones de filtrado */
 
 button {
   font-weight: 700;
@@ -107,22 +114,15 @@ button:hover {
   color: #ffffff;
 }
 
-.filter-button {
-  display: inline-block;
-}
-
-.work-section {
-  width: 370px;
-  height: 404px;
-  display: inline-block;
-  border: 1px solid #eeeeee;
-  margin: 15px;
-}
-
 .filters-buttons {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  text-align: center;
+  margin-top: 106px;
+}
+
+.filter-button {
+  display: inline-block;
 }
 
 .all {
@@ -160,19 +160,74 @@ button:hover {
   padding: 6px 26px;
 }
 
-h3 {
+/* Aqui termina los botones de filtrado */
+
+/* Aqui comienza las imagenes (portfolio) */
+
+.works-sections {
+  width: 100%;
+  margin-left: 220px;
+  margin-bottom: 82px;
+}
+
+.works-sections ul {
+  margin: 0;
+  padding: 0;
+}
+
+.work-section {
+  width: 370px;
+  height: 404px;
+  display: inline-block;
+  border: 1px solid #eeeeee;
+  margin: 15px;
+}
+
+.title-images {
   font-size: 18px;
   font-weight: 900;
   color: var(--color-negro);
-  padding: 20px 0 0 24px;
+  margin: 20px 0 4px 24px;
 }
 
-p {
+.filter-description {
   font-size: 16px;
   font-weight: 400;
   color: var(--color-negro);
-  padding: 0 0 0 24px;
+  padding: 0 0 0 20px;
 }
+
+/* Aqui termina las imagenes (portfolio) */
+
+/* Aqui comienza seccion heroes (studio-index) */
+
+.top-banner {
+  width: 100%;
+  height: 600px;
+  background-color: var(--color-negro);
+  text-align: center;
+}
+
+.slogan {
+  margin: 0;
+  padding: 200px 0 30px;
+  font-weight: 700;
+  font-size: 44px;
+  color: #ffffff;
+}
+
+.request {
+  width: 261px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: var(--color-azul);
+  border: 0;
+  border-radius: 4px;
+}
+
+/* Aqui comienza el footer */
 
 footer {
   width: 100%;
@@ -180,13 +235,36 @@ footer {
   background-color: var(--color-negro);
 }
 
+.logo-footer {
+  width: 145px;
+  height: 31px;
+  display: inline-block;
+  font-family: "raleway", sans-serif;
+  font-size: 26px;
+  color: var(--color-azul);
+  margin: 60px 0 14px 215px;
+}
+
 address {
   margin-left: 215px;
   color: #ffffff;
 }
 
-.end-info {
+address ul {
+  margin: 0;
+  padding: 0;
+}
+
+.end-infos li,
+p {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 2em;
+}
+
+.end-info {
   font-size: 14px;
   font-style: normal;
+  color: #ffffff;
 }
