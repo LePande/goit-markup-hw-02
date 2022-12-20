@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  max-width: 1600px;
+  width: 100%;  
   --color-azul: #2196f3;
   --color-negro: #212121;
   font-family: "roboto", "arial", sans-serif;
@@ -167,7 +167,7 @@ button:hover {
 /* Aqui comienza las imagenes (portfolio) */
 
 .works-sections {
-  width: 100%;
+  max-width: 1600px;
   margin-left: 220px;
   margin-bottom: 82px;
 }
