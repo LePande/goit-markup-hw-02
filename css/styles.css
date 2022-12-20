@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  width: 100%;
+  max-width: 1600px;
   --color-azul: #2196f3;
   --color-negro: #212121;
   font-family: "roboto", "arial", sans-serif;
