@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  width: 100%;  
+  width: 100%;
   --color-azul: #2196f3;
   --color-negro: #212121;
   font-family: "roboto", "arial", sans-serif;
+  background-color: #ffffff;
 }
 
 a {
@@ -19,8 +20,8 @@ a:hover {
 /* Aqui comienza el header*/
 
 .top-page {
-  background-color: #ffffff;
   width: 100%;
+  min-width: 1600px;
   height: 80px;
   border-bottom: 1px solid #ececec;
 }
@@ -168,7 +169,7 @@ button:hover {
 
 .works-sections {
   max-width: 1600px;
-  margin-left: 220px;
+  text-align: center;
   margin-bottom: 82px;
 }
 
@@ -246,7 +247,7 @@ button:hover {
 
 .company-values {
   width: 100%;
-  margin-left: 215px;
+  text-align: center;
   margin-top: 95px;
 }
 
