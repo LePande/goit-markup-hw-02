@@ -5,16 +5,16 @@ body {
   --color-negro: #212121;
   font-family: "roboto", "arial", sans-serif;
   background-color: #ffffff;
-}
-
-a {
   text-decoration: none;
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   color: var(--color-azul);
-  cursor: pointer;
 }
 
 /* Aqui comienza el header*/
@@ -37,7 +37,7 @@ a:hover {
 }
 
 .top-page-button {
-  display: inline-block;
+    display: inline-block;
 }
 
 .logo {
@@ -111,15 +111,14 @@ button {
 button:hover {
   background-color: var(--color-azul);
   color: #ffffff;
-  font-weight: 700;
   font-size: 14px;
-  color: #ffffff;
-  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08),
+  0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filters-buttons {
-  width: 100%;
-  display: inline-block;
+  min-width: 1600px;
   text-align: center;
   margin-top: 106px;
 }
@@ -129,35 +128,30 @@ button:hover {
 }
 
 .all {
-  text-align: center;
   width: 73px;
   height: 38px;
   padding: 6px 26px;
 }
 
 .web {
-  text-align: center;
   width: 128px;
   height: 38px;
   padding: 6px 26px;
 }
 
 .apps {
-  text-align: center;
   width: 148px;
   height: 38px;
   padding: 6px 53px;
 }
 
 .design {
-  text-align: center;
   width: 103px;
   height: 38px;
   padding: 6px 26px;
 }
 
 .marketing {
-  text-align: center;
   width: 130px;
   height: 38px;
   padding: 6px 26px;
@@ -168,7 +162,7 @@ button:hover {
 /* Aqui comienza las imagenes (portfolio) */
 
 .works-sections {
-  max-width: 1600px;
+  min-width: 1600px;
   text-align: center;
   margin-bottom: 82px;
 }
@@ -184,6 +178,13 @@ button:hover {
   display: inline-block;
   border: 1px solid #eeeeee;
   margin: 15px;
+}
+
+.work-section:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+  0px 4px 4px rgba(0, 0, 0, 0.06), 
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .title-images {
@@ -231,14 +232,9 @@ button:hover {
 }
 
 .request:hover {
-  width: 261px;
-  height: 50px;
   font-weight: 700;
   font-size: 16px;
-  color: #ffffff;
-  background-color: var(--color-azul);
-  border: 0;
-  border-radius: 4px;
+  background-color: #188CE8;
 }
 
 /* Aqui termina seccion heroes (studio-index) */
@@ -257,8 +253,8 @@ button:hover {
 }
 
 .company-value {
-  margin: 0;
   width: 270px;
+  margin: 0;
   text-align: left;
   display: inline-block;
 }
@@ -315,7 +311,6 @@ button:hover {
 }
 
 .ot ul {
-  text-align: center;
   margin: 0;
   padding 0;
 }
@@ -334,8 +329,10 @@ button:hover {
   height: 368px;
   display: inline-block;
   margin: 0 19px 95px;
-  box-shadow: 0px 2px 1px 0 rgb(187, 187, 187);
-  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px ;
 }
 
 ot-team-group {
@@ -353,7 +350,7 @@ ot-team-group {
 }
 
 .charge {
-  margin: 0%;
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   color: var(--color-negro);
