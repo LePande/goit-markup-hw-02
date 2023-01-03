@@ -5,7 +5,6 @@ body {
   --color-negro: #212121;
   font-family: "roboto", "arial", sans-serif;
   background-color: #ffffff;
-  text-decoration: none;
 }
 
 a {
@@ -13,7 +12,7 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+a:focus {
   color: var(--color-azul);
 }
 
@@ -55,7 +54,9 @@ a:hover {
   color: var(--color-negro);
 }
 
-.top-button:focus {
+.top-page-button .top-button:hover,
+.top-page-button .top-button:focus,
+.top-page-button .top-button:active {
   color: var(--color-azul);
 }
 
@@ -109,7 +110,8 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+button:hover,
+button:focus {
   background-color: var(--color-azul);
   color: #ffffff;
   font-size: 14px;
