@@ -1,24 +1,20 @@
 body {
   margin: 0;
+  padding: 0;
   width: 100%;
   --color-azul: #2196f3;
   --color-negro: #212121;
-  font-family: "roboto", "arial", sans-serif;
+  font-family: "Roboto", "arial", sans-serif;
   background-color: #ffffff;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-a:focus {
-  color: var(--color-azul);
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /* Aqui comienza el header*/
 
 .top-page {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   min-width: 1600px;
   height: 80px;
@@ -26,17 +22,17 @@ a:focus {
 }
 
 .top-nav {
-  display: inline-block;
-  margin-top: 24px;
+  display: flex;
+  align-items: center;
 }
 
-.top-nav ul {
+ul.top-nav {
   margin: 0;
   padding: 0;
 }
 
 .top-page-button {
-    display: inline-block;
+  display: inline-block;
 }
 
 .logo {
@@ -44,85 +40,97 @@ a:focus {
   height: 31px;
   font-family: "raleway", sans-serif;
   font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
   color: var(--color-azul);
   margin: 24px 46px 25px 215px;
 }
 
 .top-button {
   font-weight: 500;
-  font-size: 14px;
   color: var(--color-negro);
+  text-decoration: none;
 }
 
-.top-page-button .top-button:hover,
-.top-page-button .top-button:focus,
-.top-page-button .top-button:active {
+.top-button:hover,
+.top-button:focus,
+.top-button:active {
   color: var(--color-azul);
 }
 
 .studio {
   width: 42px;
   height: 16px;
-  margin: 24px 30px;
+  margin: 0 30px;
 }
 
 .portfolio {
   width: 58px;
   height: 16px;
-  margin: 24px 30px;
+  margin: 0 30px;
 }
 
 .contacts {
   width: 59px;
   height: 16px;
-  margin: 24px 314px 24px 30px;
+  margin: 0 314px 0 30px;
 }
 
 .top-contacts {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin-right: 215px;
 }
 
 .top-contact {
   font-weight: 500;
-  font-size: 14px;
   color: #757575;
+  text-decoration: none;
+}
+
+.top-contact:hover,
+.top-contact:focus {
+  color: var(--color-azul);
 }
 
 .mail {
-  margin: 24px 30px 24px 7px;
+  margin: 0 30px 0 7px;
 }
 
 .phone {
-  margin: 24px 30px 24px 7px;
+  margin: 0 30px 0 7px;
 }
 
 /* Aqui termina el header */
 
 /* Aqui comienza los botones de filtrado */
 
-button {
+.button {
   font-weight: 700;
-  font-size: 14px;
   color: var(--color-negro);
   background-color: #f5f4fa;
+  padding: 22px;
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  margin: 4px;
 }
 
-button:hover,
-button:focus {
+.button:hover,
+.button:focus,
+.button:active {
   background-color: var(--color-azul);
   color: #ffffff;
-  font-size: 14px;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.filters-buttons {
-  min-width: 1600px;
-  text-align: center;
+.section-portfolio {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
   margin-top: 106px;
 }
 
@@ -164,42 +172,42 @@ button:focus {
 
 /* Aqui comienza las imagenes (portfolio) */
 
-.works-sections {
-  min-width: 1600px;
-  text-align: center;
+.portfolio-list {
+  max-width: 1400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 82px;
-}
-
-.works-sections ul {
-  margin: 0;
-  padding: 0;
 }
 
 .work-section {
   width: 370px;
   height: 404px;
-  display: inline-block;
+  display: flex;
   border: 1px solid #eeeeee;
   margin: 15px;
 }
 
-.work-section:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-  0px 4px 4px rgba(0, 0, 0, 0.06), 
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+.image-potfolio {
+  text-decoration: none;
+}
 
+.image-potfolio:hover,
+.image-potfolio:focus,
+.image-potfolio:active {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .title-images {
   font-size: 18px;
   font-weight: 900;
   color: var(--color-negro);
-  margin: 20px 0 4px 24px;
+  padding: 0 0 0 20px;
 }
 
 .filter-description {
   font-size: 16px;
-  font-weight: 400;
   color: var(--color-negro);
   padding: 0 0 0 20px;
 }
@@ -232,12 +240,12 @@ button:focus {
   background-color: var(--color-azul);
   border: 0;
   border-radius: 4px;
+  cursor: pointer;
 }
 
-.request:hover {
-  font-weight: 700;
-  font-size: 16px;
-  background-color: #188CE8;
+.request:hover,
+.request:focus {
+  background-color: #188ce8;
 }
 
 /* Aqui termina seccion heroes (studio-index) */
@@ -245,33 +253,34 @@ button:focus {
 /* Aqui comienza valores corporativos (studio-index) */
 
 .company-values {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   text-align: center;
-  margin-top: 95px;
 }
 
-.company-values ul {
+.container-value {
+  display: flex;
+  text-align: center;
   margin: 0;
   padding: 0;
 }
 
 .company-value {
-  width: 270px;
-  margin: 0;
-  text-align: left;
+  margin: 94px 15px 0 15px;
   display: inline-block;
+  width: 270px;
 }
 
 .title-value {
-  margin: 0 0 10px 0;
-  font-size: 14;
+  margin: 0;
   font-weight: 700;
   color: var(--color-negro);
 }
 
 .text-values {
-  font-size: 14;
-  font-weight: 400;
+  margin: 14px 0 0 0;
   line-height: 1.5em;
   color: var(--color-negro);
 }
@@ -280,7 +289,15 @@ button:focus {
 
 /* Aqui comienza what we do (studio-index) */
 
-.wwd ul {
+.wwd {
+  width: 100%;
+  text-align: center;
+}
+
+.wwd-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -288,19 +305,12 @@ button:focus {
 
 .wwd-title {
   margin: 94px 0 55px 0;
-  padding: 0;
   font-size: 36px;
   font-weight: 700;
-  text-align: center;
-}
-
-.wwd-group {
-  text-align: center;
 }
 
 .wwd-images {
   margin: 0 15px 95px;
-  display: inline-block;
 }
 
 /* Aqui termina what we do (studio-index) */
@@ -308,22 +318,26 @@ button:focus {
 /* Aqui comienza Our team (studio-index) */
 
 .ot {
+  width: 100%;
   background-color: #f5f4fa;
   margin: 0;
   padding: 0;
 }
 
-.ot ul {
-  margin: 0;
-  padding 0;
-}
-
 .ot-section-title {
-  margin: 0 0 0 0;
-  padding: 95px;
+  padding: 95px 0 50px 0;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+  margin: 0;
+}
+
+ul.ot-team-group {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ot-team {
@@ -331,16 +345,10 @@ button:focus {
   width: 270px;
   height: 368px;
   display: inline-block;
-  margin: 0 19px 95px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px ;
-}
-
-ot-team-group {
-  margin: 0;
-  padding: 0;
+  margin: 0 15px 94px 15px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .ot-title {
@@ -355,7 +363,6 @@ ot-team-group {
 .charge {
   margin: 0;
   font-size: 16px;
-  font-weight: 400;
   color: var(--color-negro);
   text-align: center;
 }
@@ -377,7 +384,8 @@ footer {
   font-family: "raleway", sans-serif;
   font-size: 26px;
   color: var(--color-azul);
-  margin: 60px 0 14px 215px;
+  margin: 60px 0 9px 215px;
+  text-decoration: none;
 }
 
 address {
@@ -395,11 +403,15 @@ address ul {
 }
 
 .end-info {
-  list-style: none;
-  font-size: 14px;
   font-style: normal;
   color: #ffffff;
   line-height: 1.5em;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+.end-info:hover,
+.end-info:focus {
+  color: var(--color-azul);
 }
