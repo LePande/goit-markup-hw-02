@@ -1,40 +1,29 @@
 body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
   --color-azul: #2196f3;
   --color-negro: #212121;
+  --color-gris: #757575;
+  --color-blanco: #ffffff;
+  --color-gris-claro: #F5F4FA;
   font-family: "Roboto", "arial", sans-serif;
-  background-color: #ffffff;
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.1;
+  background-color: var(--color-blanco);
 }
 
 /* Aqui comienza el header*/
 
-.top-page {
-  height: 80px;
-  border-bottom: 1px solid #ececec;
-}
-
-.top-nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-.top-page-button {
-  display: inline-block;
-}
-
 .logo {
-  width: 145px;
-  height: 31px;
   font-family: "raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
+  line-height: 1.3;
   text-decoration: none;
   color: var(--color-azul);
-  margin-right: 30px;
+}
+
+.top-page-buttons {
+  list-style: none;
 }
 
 .top-button {
@@ -53,9 +42,13 @@ body {
   color: var(--color-azul);
 }
 
+.top-contacts {
+  list-style: none;
+}
+
 .top-contact {
   font-weight: 500;
-  color: #757575;
+  color: var(--color-gris);
   text-decoration: none;
 }
 
@@ -68,65 +61,55 @@ body {
 
 /* Aqui comienza los botones de filtrado */
 
-.button {
+.portfolio-list {
+  list-style: none;
+}
+
+.portfolio-list-button {
+  font-family: "Roboto", "arial", sans-serif;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 1.6;
   color: var(--color-negro);
-  background-color: #f5f4fa;
-  border: 0;
-  border-radius: 4px;
+  background-color: var(--color-gris-claro);
+  cursor: pointer;
 }
 
-.button:hover,
-.button:focus,
-.button:active {
+.portfolio-list-button:hover,
+.portfolio-list-button:focus,
+.portfolio-list-button:active {
   background-color: var(--color-azul);
-  color: #ffffff;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.filter-button {
-  display: inline-block;
+  color: var(--color-blanco);
 }
 
 /* Aqui termina los botones de filtrado */
 
 /* Aqui comienza las imagenes (portfolio) */
 
-ul.portfolio-list {
-  margin: 0;
-  padding: 0;
+.portfolio-list-sections {
+  list-style: none;
 }
 
-.work-section {
-  width: 370px;
-  height: 404px;
-  border: 1px solid #eeeeee;
-  margin: 15px;
+.portfolio-list-section {
+  border: 1px solid #eeeeee;  
 }
 
-.image-potfolio {
+.portfolio-list-section-link {
   text-decoration: none;
 }
 
-.image-potfolio:hover,
-.image-potfolio:focus,
-.image-potfolio:active {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.title-images {
+.portfolio-list-section-title {
   font-size: 18px;
   font-weight: 900;
+  line-height: 2;
   color: var(--color-negro);
-  padding-left: 20px;
+  text-decoration: none;
 }
 
-.filter-description {
+.portfolio-list-section-description {
   font-size: 16px;
-  color: var(--color-negro);
-  padding-left: 20px;
+  line-height: 1.8;
+  color: var(--color-gris);
 }
 
 /* Aqui termina las imagenes (portfolio) */
@@ -134,31 +117,27 @@ ul.portfolio-list {
 /* Aqui comienza seccion heroes (studio-index) */
 
 .top-banner {
-  width: 100%;
   background-color: var(--color-negro);
-  text-align: center;
 }
 
-.slogan {
-  font-weight: 700;
+.top-banner-slogan {
   font-size: 44px;
-  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--color-blanco)
 }
 
-.request {
-  width: 261px;
-  height: 50px;
-  font-weight: 700;
+.top-banner-button-request {
   font-size: 16px;
-  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--color-blanco)
   background-color: var(--color-azul);
-  border: 0;
-  border-radius: 4px;
   cursor: pointer;
 }
 
-.request:hover,
-.request:focus {
+.top-banner-button-request:hover,
+.top-banner-button-request:focus {
   background-color: #188ce8;
 }
 
@@ -166,11 +145,7 @@ ul.portfolio-list {
 
 /* Aqui comienza valores corporativos (studio-index) */
 
-.company-values {
-  text-align: center;
-}
-
-.company-value {
+.list-value {
   list-style: none;
 }
 
@@ -179,70 +154,56 @@ ul.portfolio-list {
   color: var(--color-negro);
 }
 
-.text-values {
-  line-height: 1.5em;
-  color: var(--color-negro);
+.text-value {
+  line-height: 1.7;
+  color: var(--color-gris)
 }
 
 /* Aqui termina valores corporativos (studio-index) */
 
 /* Aqui comienza what we do (studio-index) */
 
-.wwd {
-  width: 100%;
-  text-align: center;
-}
-
-.wwd-group {
+.what-we-do-group {
   list-style: none;
 }
 
-.wwd-title {
+.what-we-do-title {
   font-size: 36px;
   font-weight: 700;
+  color: var(--color-negro);
 }
 
 /* Aqui termina what we do (studio-index) */
 
 /* Aqui comienza Our team (studio-index) */
 
-.ot {
-  width: 100%;
-  background-color: #f5f4fa;
-  margin: 0;
-  padding: 0;
+.section-our-team {
+  background-color: var(--color-gris-claro);
+}
+
+.our-team-list {
+  list-style: none;
 }
 
 .ot-section-title {
   font-size: 36px;
   font-weight: 700;
-  text-align: center;
+  color: var(--color-negro);
 }
 
-ul.ot-team-group {
-  margin: 0;
-  padding: 0;
+.our-team-list-item {
+  background-color: var(--color-blanco);
 }
 
-.ot-team {
-  background-color: #ffffff;
-  display: inline-block;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-.ot-title {
-  text-align: center;
+our-team-title {
   font-size: 16px;
   font-weight: 500;
   color: var(--color-negro);
 }
 
-.charge {
+.our-team-charge {
   font-size: 16px;
-  color: var(--color-negro);
-  text-align: center;
+  color: var(--color-gris);
 }
 
 /* Aqui termina Our team (studio-index) */
@@ -250,43 +211,29 @@ ul.ot-team-group {
 /* Aqui comienza el footer */
 
 footer {
-  width: 100%;
-  height: 252px;
   background-color: var(--color-negro);
-}
-
-.logo-footer {
-  width: 145px;
-  height: 31px;
-  display: inline-block;
-  font-family: "raleway", sans-serif;
-  font-size: 26px;
-  color: var(--color-azul);
-  text-decoration: none;
-}
-
-address {
-  color: #ffffff;
-}
-
-address ul {
-  margin: 0;
-  padding: 0;
 }
 
 .end-infos {
   list-style: none;
 }
 
-.end-info {
+.address-end-info {
+  line-height: 1.7;
   font-style: normal;
-  color: #ffffff;
-  line-height: 1.5em;
-  margin: 0;
-  padding: 0;
+  text-decoration: none;
+  color: var(--color-blanco);
+}
+
+.end-info {
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   text-decoration: none;
 }
 
+.address-end-info:hover,
+.address-end-info:focus,
 .end-info:hover,
 .end-info:focus {
   color: var(--color-azul);
